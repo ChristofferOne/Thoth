@@ -16,6 +16,6 @@ class ModelController:
             return None
 
     @staticmethod
-    def makeModel(name, inputs, outputs=1):
+    def makeModel(name, inputs, layers, outputs=1):
         # Set a 24x24 (576) input model
         return NetworkModel.createModel(name, inputs, outputs)

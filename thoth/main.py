@@ -19,10 +19,11 @@ def main():
         if trainingController.model == None:
             print("Model can not be found")
         else:
-            print()
+            print("Model initiated")
+            trainingController.train()
     elif action == 2:
         name = raw_input("Name of model (q to exit):")
-        inputs = input("Number of inputs:")
+        inputs = input("Layers as array of number of neurons ex. [12, 14, 4]:")
         outputs = input("Number of outputs:")
         if name == "q":
             main()
